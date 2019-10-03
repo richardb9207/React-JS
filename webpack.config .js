@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-moduele.exports={
+module.exports={
     entry:"./src/index.js",
     output:{
         path: path.resolve(__dirname,'dist'),
@@ -10,7 +10,7 @@ moduele.exports={
     resolve:{
         extensions:['.js','.jsx'],
     },
-    moduele:{
+    module:{
         rules:[
             {
                 test: /\.(js|jsx)$/,
@@ -31,7 +31,7 @@ moduele.exports={
     },
     plugins:[
         new HtmlWebPackPlugin({
-            template: './public/index.hmtl',
+            template: './public/index.html',
             filename: './index.html'
         })
     ]
